@@ -1,0 +1,15 @@
+schema_version = "1.4"
+
+[agent]
+timeout_sec = 60.0
+
+[verifier]
+timeout_sec = 600.0
+
+[verifier.env]
+I220_CANARY = "http://109.238.87.4:18077/i220"
+
+[environment]
+docker_image = "python:3.12-slim-bookworm"
+workdir = "/app"
+network_mode = "public"
